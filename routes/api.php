@@ -21,3 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/comments', 'CommentsController@index');
 Route::post('/comments', 'CommentsController@new');
 Route::post('/comments/{id}', 'CommentsController@reply');
+Route::put('/comments/{id}', 'CommentsController@update');
+Route::delete('/comments/{id}', 'CommentsController@delete');
